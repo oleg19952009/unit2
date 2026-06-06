@@ -8,9 +8,12 @@ test('sort', () => {
 		{ name: 'маг', health: 100 },
 		{ name: 'лучник', health: 80 },
 	];
-	const sortName = ['маг', 'лучник', 'мечник'];
+	const sortName = [
+		{ name: 'маг', health: 100 },
+		{ name: 'лучник', health: 80 },
+		{ name: 'мечник', health: 10 },
+	];
 	const sort = healthSort(players);
-	for (let i = 0; i < sort.length; i++) {
-		expect(sort[i].name).toBe(sortName[i]);
-	}
+	expect(sort).toEqual(sortName);
+
 });
