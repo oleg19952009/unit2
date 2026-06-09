@@ -1,4 +1,4 @@
-import { healthIndication, healthSort } from '../player';
+import { healthSort } from '../player';
 
 
 
